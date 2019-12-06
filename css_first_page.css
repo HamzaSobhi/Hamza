@@ -1,0 +1,198 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+/*
+ <marquee behavior="scroll" direction="right"><img src="../resources/for_fly.jpg" width="45" height="45"/>
+
+        </marquee>
+ */
+
+#back {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    height: 900px;
+}
+
+#layer {
+
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: black;
+    width: 95%;
+    height: 849px;
+    vertical-align: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+
+#main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: dimgrey;
+}
+
+
+#first {
+    margin-left: 190px;
+    /*background: linear-gradient(45deg, #eeaa92, #b6e2e8);*/
+    background: red;
+    width: 96%;
+    height: 10%;
+    transform: skewX(-75deg);
+
+    background: linear-gradient(orangered, gold);
+
+}
+
+
+
+#second {
+    background: linear-gradient(45deg, #eeaa92, #b6e2e8);
+    width: 100%;
+    margin-top: -20px;
+    height: 90%;
+    border-radius: 10px 0 10px 10px;
+}
+
+
+
+
+#textAngle {
+    position: absolute;
+
+    font-size: 30px;
+
+    margin-top: 50px;
+    margin-left: 10px;
+
+    animation: blink 1.5s linear infinite;
+
+
+    color: gold;
+
+    font-style: italic;
+    font-weight: bold;
+
+    top: -10px;
+
+}
+
+.textArea {
+    /*margin: 1% 1% 1%;*/
+}
+
+.mainText {
+    font-size: 110%;
+    font-family: "Times New Roman", Times, serif;
+    font-variant: small-caps;
+    text-indent: 2.2%; /*красная строка*/
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.textArea p:first-letter {
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: red;
+}
+
+
+.textArea:after {
+    margin: 2% 5% 1%;
+    content: url("../resources/bmw_m_logo.jpg");
+}
+
+.diamond {
+    position: relative;
+    text-align: center;
+}
+
+h2.big_text_diamond {
+    position: absolute;
+    z-index: 5;
+    font-style: italic;
+    font-size: 100px;
+    color: red;
+
+    animation: blink 1s linear infinite;
+
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+
+    margin-top: 10px;
+    margin-left: 600px;
+    text-align: center;
+}
+
+.diamond_1, .diamond_2, .diamond_3 {
+
+
+    background: linear-gradient(orangered, gold);
+
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    transform: rotate(45deg);
+    border: 3px solid #660003;
+}
+
+.diamond_1 {
+    position: absolute;
+    top: 2px;
+    left: 500px;
+
+}
+
+.diamond_2 {
+    position: absolute;
+    top: 2px;
+    left: 650px;
+
+}
+
+.diamond_3 {
+    position: absolute;
+
+    top: 2px;
+    left: 800px;
+}
+
+@keyframes blink {
+    100% {
+        color: rgba(34, 34, 34, 0);
+    }
+}
+
+#blink {
+    -webkit-animation: blink 3s linear infinite;
+    animation: blink 3s linear infinite;
+}
+
+
+.move_to_next_page {
+    position: fixed;
+    text-align: center;
+
+    z-index: 10;
+    left: 85%;
+    background-color: #b6e2e8;
+    opacity: 0.9;
+    border-radius: 20px;
+
+    height: 9%;
+    width: 12%;
+
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+    margin-top: 2%;
+
+}
